@@ -15,6 +15,13 @@ jQuery(document).ready(function($){
 		jQuery('#bottom').find('.texture').css({'width':'100%', 'height':'100%', 'background-image': 'url('+templateDir+'/images/paper_bg.png), url(' +imgSrc+')'});
 		jQuery('#bottom').find('img').css({'opacity':0});
 	}
+	$('#pitch .pitch-content').each(function(){
+		var imgSrc = $(this).find('img').attr('src');
+		
+		$(this).css({'background-image': ' url(' +imgSrc+')'});
+		$(this).find('img').css({'opacity':0});
+		console.log(templateDir);
+	});
 		
 	jQuery('.flexslider').flexslider({
 	  animation: "slide",
